@@ -1,10 +1,11 @@
-package com.mayzn.note.android;
+package com.mayzn.note.android.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import com.mayzn.note.android.R;
 
-public class HelloAndroidActivity extends Activity {
+public class DevHomeActivity extends Activity {
 
     private static String TAG = "note-android";
 
