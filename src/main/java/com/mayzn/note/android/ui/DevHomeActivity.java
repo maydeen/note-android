@@ -1,13 +1,15 @@
 package com.mayzn.note.android.ui;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import com.mayzn.note.android.R;
 
 public class DevHomeActivity extends Activity {
 
-    private static String TAG = "note-android";
+    private static String TAG = DevHomeActivity.class.getSimpleName();
 
     /**
      * Called when the activity is first created.
@@ -19,8 +21,16 @@ public class DevHomeActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 		Log.i(TAG, "onCreate");
-        setContentView(R.layout.main);
+        setContentView(R.layout.dev_home);
     }
+
+
+    public void viewItemList(View view) {
+        Intent intent = new Intent(this, ItemListActivity.class);
+        startActivity(intent);
+    }
+
+
 
 }
 

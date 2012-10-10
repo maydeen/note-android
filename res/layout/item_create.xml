@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:orientation="vertical"
+        >
+
+    <TextView android:text="내용 입력하기"
+              android:layout_height="wrap_content"
+              android:layout_width="fill_parent"
+            />
+
+    <EditText android:id="@+id/item_create_title"
+              android:layout_height="wrap_content"
+              android:layout_width="fill_parent"
+              android:hint="title"
+            />
+    <EditText android:id="@+id/item_create_content"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:layout_width="fill_parent"
+              android:hint="content"
+              android:gravity="top"
+            />
+
+    <Button android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="저장하기"
+            android:onClick="onClick"
+            />
+
+</LinearLayout>
