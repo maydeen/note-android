@@ -8,6 +8,7 @@
     <packaging>apk</packaging>
     <name>note-android</name>
 
+
     <properties>
         <platform.version> 4.0.1.2
             </platform.version>
