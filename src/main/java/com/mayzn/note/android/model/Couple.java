@@ -1,4 +1,4 @@
 package com.mayzn.note.android.model;
 
-public class Couple {
+public class Couple extends BaseModel {
 }

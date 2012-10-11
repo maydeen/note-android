@@ -9,7 +9,7 @@ import com.mayzn.note.android.R;
 import com.mayzn.note.android.model.Item;
 import com.mayzn.note.android.net.NoteRestfulService;
 
-public class ItemCreateActivity extends Activity {
+public class ItemCreateActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class ItemCreateActivity extends Activity {
         item.coupleId = 1l;
 
 
-        NoteRestfulService.put(Item.class , item);
+        restfulService.put(Item.class , item);
 
         Intent intent = new Intent(this , ItemListActivity.class);
         startActivity(intent);

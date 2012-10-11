@@ -1,4 +1,4 @@
 package com.mayzn.note.android.model;
 
-public class User {
+public class User extends BaseModel {
 }

@@ -23,7 +23,7 @@ import java.util.List;
  * Time: 오후 11:43
  * To change this template use File | Settings | File Templates.
  */
-public class ItemListActivity extends Activity {
+public class ItemListActivity extends BaseActivity {
 
     private static final String TAG = ItemListActivity.class.getSimpleName();
     @Override
@@ -34,7 +34,7 @@ public class ItemListActivity extends Activity {
 
         setContentView(R.layout.item_list);
 
-        List<Item> items = NoteRestfulService.list(Item.class , new TypeReference<List<Item>>() {});
+        List<Item> items = restfulService.list(Item.class , new TypeReference<List<Item>>() {});
         LogUtils.LOGI(LogUtils.makeLogTag(TAG), "items :" + items.toString());
 
         ListView itemsView = (ListView)findViewById(R.id.itemList_data);

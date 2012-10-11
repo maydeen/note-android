@@ -7,7 +7,7 @@ import com.mayzn.note.android.R;
 import com.mayzn.note.android.model.Item;
 import com.mayzn.note.android.net.NoteRestfulService;
 
-public class ItemViewActivity extends Activity {
+public class ItemViewActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +16,7 @@ public class ItemViewActivity extends Activity {
 
         long itemId = getIntent().getLongExtra("item.id" , -1);
 
-        Item item = NoteRestfulService.get(Item.class , itemId);
+        Item item = restfulService.get(Item.class , itemId);
 
         TextView title = (TextView)findViewById(R.id.item_view_title);
         title.setText(item.title);
